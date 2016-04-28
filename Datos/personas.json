@@ -1,4 +1,4 @@
-{"personas":[
+[
   {"nombre":"Miguel", "edad": 25, "sexo": "HOMBRE"},
   {"nombre":"Consuelo", "edad":30, "sexo": "HOMBRE"},
   {"nombre":"Isabel", "edad":30, "sexo": "MUJER"},
@@ -28,4 +28,4 @@
   {"nombre":"María", "edad":1, "sexo": "MUJER"},
   {"nombre":"Concepción", "edad":17, "sexo": "MUJER"},
   {"nombre":"Marina", "edad":52, "sexo": "MUJER"}
-  ]}
+  ]
