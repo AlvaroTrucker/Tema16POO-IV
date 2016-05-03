@@ -10,7 +10,7 @@ public abstract class PoligonoRegular implements Comparable<PoligonoRegular> {
 		this.nombre = nombre;
 		this.lados = lados;
 		this.longitud = longitud;
-	}
+	}	
 	
 	public double getPerimetro(){
 		return this.lados*this.longitud;

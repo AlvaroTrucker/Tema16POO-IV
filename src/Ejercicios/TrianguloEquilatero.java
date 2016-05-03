@@ -9,6 +9,6 @@ public class TrianguloEquilatero extends PoligonoRegular {
 	@Override
 	public double getArea() {
 		return (Math.sqrt(3)/4)*Math.pow(this.getLongitud(),2);
-	}
+	}	
 
 }

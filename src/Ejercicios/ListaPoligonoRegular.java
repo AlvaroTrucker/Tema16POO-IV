@@ -13,5 +13,5 @@ public class ListaPoligonoRegular {
 
 	public List<PoligonoRegular> getLista() {
 		return lista;
-	}	
+	}
 }

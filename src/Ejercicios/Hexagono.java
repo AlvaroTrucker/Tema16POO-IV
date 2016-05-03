@@ -3,7 +3,7 @@ package Ejercicios;
 public class Hexagono extends PoligonoRegular {
 
 	public Hexagono(double longitud) {
-		super("Hexágono", 6, longitud);
+		super("Hexagono", 6, longitud);
 	}
 
 	@Override

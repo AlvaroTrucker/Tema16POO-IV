@@ -4,32 +4,40 @@ public class TestPoligonoRegular {
 
 	public static void main(String[] args) {
 		
-		PoligonoRegular pT1 = new TrianguloEquilatero(6.3);
-		PoligonoRegular pT2 = new TrianguloEquilatero(4.5);
-		PoligonoRegular pT3 = new TrianguloEquilatero(3.2);
+		PoligonoRegular t1 = new TrianguloEquilatero(6.3);
+		PoligonoRegular t2 = new TrianguloEquilatero(4.5);
+		PoligonoRegular t3 = new TrianguloEquilatero(3.2);
 		
-		PoligonoRegular pC1 = new Cuadrado(3.1);
-		PoligonoRegular pC2 = new Cuadrado(2.1);
-		PoligonoRegular pC3 = new Cuadrado(9.4);
+		PoligonoRegular c1 = new Cuadrado(3.1);
+		PoligonoRegular c2 = new Cuadrado(2.1);
+		PoligonoRegular c3 = new Cuadrado(9.4);
 		
-		PoligonoRegular pH1 = new Hexagono(19.5);
-		PoligonoRegular pH2 = new Hexagono(14.3);
-		PoligonoRegular pH3 = new Hexagono(11.5);
+		PoligonoRegular h1 = new Hexagono(19.5);
+		PoligonoRegular h2 = new Hexagono(14.3);
+		PoligonoRegular h3 = new Hexagono(11.5);
 		
-		ListaPoligonoRegular lPR = new ListaPoligonoRegular();
+		ListaPoligonoRegular lista = new ListaPoligonoRegular();
 		
-		lPR.addLista(pH3);lPR.addLista(pH2);lPR.addLista(pH1);lPR.addLista(pC3);lPR.addLista(pC2);lPR.addLista(pC1);lPR.addLista(pT3);lPR.addLista(pT2);lPR.addLista(pT1);
+		lista.addLista(t1);
+		lista.addLista(t2);
+		lista.addLista(t3);
+		lista.addLista(c1);
+		lista.addLista(c2);
+		lista.addLista(c3);
+		lista.addLista(h1);
+		lista.addLista(h2);
+		lista.addLista(h3);
 		
-		for (PoligonoRegular poligono : lPR.getLista()) {
-			System.out.println(poligono + " perímetro: " + poligono.getPerimetro() + " área:" + poligono.getArea());
+		for (PoligonoRegular poligono : lista.getLista()) {
+			System.out.println(poligono + " perimetro: " + poligono.getPerimetro() + " Area:" + poligono.getArea());
 		}
 		
-		for (PoligonoRegular poligono : lPR.getLista()) {
-			System.out.format("¿Es %s igual a %s?: %b\n", pT1, poligono,  pT1.equals(poligono));
+		for (PoligonoRegular poligono : lista.getLista()) {
+			System.out.printf("�Es %s igual a %s?: %b\n", t1, poligono,  t1.equals(poligono));
 		}
 		
-		for (PoligonoRegular poligono : lPR.getLista()) {
-			System.out.format("¿Diferencia de lados entre %s y %s?: %d\n", pT1, poligono, pT1.compareTo(poligono));
+		for (PoligonoRegular poligono : lista.getLista()) {
+			System.out.printf("�Diferencia de lados entre %s y %s?: %d\n", t1, poligono, t1.compareTo(poligono));
 		}
 		
 	}

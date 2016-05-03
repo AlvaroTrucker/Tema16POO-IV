@@ -10,5 +10,6 @@ public class Cuadrado extends PoligonoRegular {
 	public double getArea() {
 		return 2*this.getLongitud();
 	}
+	
 
 }
