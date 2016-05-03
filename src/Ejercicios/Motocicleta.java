@@ -8,7 +8,7 @@ public class Motocicleta implements Vehiculo{
 	public String acelerar(int valor) {
 		velocidad += valor;
 		String cadena = "moto "+velocidad+" km/h";
-		if (velocidad>=VELOCIDAD_MAXIMA) cadena += ". Has excedido la velocidad máxima.";
+		if (velocidad>=VELOCIDAD_MAXIMA) cadena += ". Has excedido la velocidad maxima.";
 		return cadena;
 	}
 

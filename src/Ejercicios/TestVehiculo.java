@@ -2,19 +2,18 @@ package Ejercicios;
 
 public class TestVehiculo {
 	public static void main(String[] args) {
-		Vehiculo vC = new Coche();
+		Vehiculo v1 = new Coche();
 		
-		System.out.println(vC.acelerar(50));
-		System.out.println(vC.acelerar(50));
-		System.out.println(vC.acelerar(50));
-		System.out.println(vC.frenar(40));
+		System.out.println(v1.acelerar(40));
+		System.out.println(v1.acelerar(50));
+		System.out.println(v1.acelerar(50));
+		System.out.println(v1.frenar(20));
 		
-		Vehiculo vM = new Motocicleta();
+		Vehiculo v2 = new Motocicleta();
 		
-		System.out.println(vM.acelerar(140));
-		System.out.println(vM.frenar(40));
-		System.out.println(vM.frenar(70));
-		System.out.println(vM.frenar(170));
+		System.out.println(v2.acelerar(140));
+		System.out.println(v2.frenar(10));
+		System.out.println(v2.frenar(70));
 	}
 	
 }

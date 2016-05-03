@@ -9,14 +9,16 @@ public class Coche implements Vehiculo{
 	public String acelerar(int valor) {
 		velocidad += valor;
 		String cadena = "coche "+velocidad+" km/h";
-		if (velocidad>=VELOCIDAD_MAXIMA) cadena += ". Has excedido la velocidad máxima.";
+		if (velocidad>=VELOCIDAD_MAXIMA)
+			cadena += ". Has excedido la velocidad maxima";
 		return cadena;
 	}
 
 	@Override
 	public String frenar(int valor) {
 		velocidad -= valor;
-		if (velocidad<=0) velocidad = 0;
+		if (velocidad<=0)
+			velocidad = 0;
 		String cadena = "coche "+velocidad+" km/h";
 		return cadena;
 	}

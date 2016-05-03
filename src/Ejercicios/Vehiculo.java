@@ -7,4 +7,4 @@ public interface Vehiculo {
 	 String acelerar(int valor);
 	 
 	 String frenar(int valor);
-}
+}	
