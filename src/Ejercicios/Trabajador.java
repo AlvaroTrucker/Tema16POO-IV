@@ -12,7 +12,7 @@ public abstract class Trabajador {
 	
 	protected String nombreApellidos(){
 		return this.nombre + " " + this.apellidos;
-	}
+	}	
 	
 	public abstract double sueldoMensual(int diasTrabajados);
 }

@@ -13,7 +13,7 @@ public class Tecnico extends Trabajador{
 	@Override
 	public double sueldoMensual(int diasTrabajados) {
 		return Tecnico.PAGA_DIARIA*diasTrabajados;
-	}
+	}	
 
 	
 }

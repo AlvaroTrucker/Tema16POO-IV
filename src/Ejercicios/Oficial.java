@@ -17,7 +17,7 @@ public class Oficial extends Trabajador{
 	@Override
 	public double sueldoMensual(int diasTrabajados) {
 		return Oficial.PAGA_DIARIA*diasTrabajados;
-	}
+	}	
 	
 	
 }
