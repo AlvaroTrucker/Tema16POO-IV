@@ -14,4 +14,9 @@ public class ListaPoligonoRegular {
 	public List<PoligonoRegular> getLista() {
 		return lista;
 	}
+
+	@Override
+	public String toString() {
+		return "ListaPoligonoRegular [lista=" + lista + "]";
+	}
 }

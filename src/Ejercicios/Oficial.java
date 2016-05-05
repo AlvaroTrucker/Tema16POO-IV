@@ -2,7 +2,7 @@ package Ejercicios;
 
 public class Oficial extends Trabajador{
 	
-	private final static double PAGA_DIARIA = 100;
+	private static final double PAGA_DIARIA = 100;
 	private String clase;
 	
 	public Oficial(String nombre, String apellidos, String tipo) {
@@ -16,7 +16,7 @@ public class Oficial extends Trabajador{
 
 	@Override
 	public double sueldoMensual(int diasTrabajados) {
-		return Oficial.PAGA_DIARIA*diasTrabajados;
+		return PAGA_DIARIA*diasTrabajados;
 	}	
 	
 	
