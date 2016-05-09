@@ -1,17 +1,15 @@
 package Ejercicios;
 
 public class Coche implements Vehiculo{
+	private int velocidad = 0;
 	
-	int velocidad = 0;
-	
-
 	@Override
 	public String acelerar(int valor) {
 		velocidad += valor;
-		String cadena = "coche "+velocidad+" km/h";
+		String mensaje = "coche a "+velocidad+" km/h";
 		if (velocidad>=VELOCIDAD_MAXIMA)
-			cadena += ". Has excedido la velocidad maxima";
-		return cadena;
+			mensaje += ". Has excedido la velocidad maxima";
+		return mensaje;
 	}
 
 	@Override
@@ -19,11 +17,11 @@ public class Coche implements Vehiculo{
 		velocidad -= valor;
 		if (velocidad<=0)
 			velocidad = 0;
-		String cadena = "coche "+velocidad+" km/h";
+		String cadena = "coche a "+velocidad+" km/h";
 		return cadena;
 	}
 	
-	int numeroPlazas(){
+	public int numeroPlazas(){
 		return 5;
 	}
 

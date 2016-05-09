@@ -2,18 +2,16 @@ package Ejercicios;
 
 public class TestVehiculo {
 	public static void main(String[] args) {
-		Vehiculo v1 = new Coche();
+		Vehiculo coche = new Coche();
+		Vehiculo moto = new Motocicleta();
 		
-		System.out.println(v1.acelerar(40));
-		System.out.println(v1.acelerar(50));
-		System.out.println(v1.acelerar(50));
-		System.out.println(v1.frenar(20));
-		
-		Vehiculo v2 = new Motocicleta();
-		
-		System.out.println(v2.acelerar(140));
-		System.out.println(v2.frenar(10));
-		System.out.println(v2.frenar(70));
+		for (int i = 0; i < 40; i++) {
+			
+			System.out.println(coche.acelerar((int) (Math.random()*100)));
+			System.out.println(moto.acelerar((int) (Math.random()*100)));
+			System.out.println(coche.frenar((int) (Math.random()*100)));
+			System.out.println(moto.frenar((int) (Math.random()*100)));
+		}
 	}
 	
 }
